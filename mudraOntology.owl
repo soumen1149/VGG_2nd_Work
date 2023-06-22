@@ -1,0 +1,758 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#"
+     xml:base="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#NegativeDirName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#NegativeDirName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Axis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Direction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PositiveDirName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PositiveDirName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Axis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Direction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Touch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Touch">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerJoints"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerParts"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerJoints"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerParts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#alignedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#alignedWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Finger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Direction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#bottomJointPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#bottomJointPoint">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerParts"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerJoints"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#hasCoordinate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#hasCoordinate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Palm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PalmCoordinate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#hasJoints -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#hasJoints">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Finger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerJoints"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#hasSegments -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#hasSegments">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Finger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerParts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#isNamedAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#isNamedAs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#HandStructure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#topJointPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#topJointPoint">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerParts"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerJoints"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#hasCoordinate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#hasCoordinate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Origin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#hasFlexionAngle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#hasFlexionAngle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerJoints"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#isAlignedWith -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#isAlignedWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Finger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Axis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Axis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PalmCoordinate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Direction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Direction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PalmCoordinate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Finger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Finger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#HandStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerJoints -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerJoints"/>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerParts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerParts"/>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#HandStructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#HandStructure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Origin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Origin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PalmCoordinate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Palm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Palm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#HandStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PalmCoordinate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PalmCoordinate"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Alapadma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Alapadma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Arala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Arala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Ardhachandra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Ardhachandra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Ardhapataaka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Ardhapataaka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Ardhasuchi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Ardhasuchi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Back -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Back">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Direction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Bhramara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Bhramara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#CMC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#CMC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerJoints"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Chandrakala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Chandrakala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Chatura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Chatura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#DIP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#DIP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerJoints"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Front -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Front">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Direction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Hamsapaksha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Hamsapaksha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Hamsasya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Hamsasya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#IP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#IP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerJoints"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Index -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Index">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Finger"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#DIP"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#MCP"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PIP"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#TIP"/>
+        <hasSegments rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_1"/>
+        <hasSegments rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_2"/>
+        <hasSegments rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Inward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Inward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Direction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Kangula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Kangula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Kapitta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Kapitta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Kartarimukha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Kartarimukha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Katakaa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Katakaa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Katakamukha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Katakamukha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Left -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Left">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Direction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Little -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Little">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Finger"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#DIP"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#MCP"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PIP"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#TIP"/>
+        <hasSegments rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_1"/>
+        <hasSegments rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_2"/>
+        <hasSegments rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#MCP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#MCP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerJoints"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mayura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mayura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Middle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Middle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Finger"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#DIP"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#MCP"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PIP"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#TIP"/>
+        <hasSegments rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_1"/>
+        <hasSegments rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_2"/>
+        <hasSegments rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mrigashirsha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mrigashirsha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mukula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mukula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mushthi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mushthi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Outward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Outward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Direction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PIP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PIP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerJoints"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Padmakosha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Padmakosha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Palli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Palli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Pataaka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Pataaka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Right -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Right">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Direction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Ring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Ring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Finger"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#DIP"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#MCP"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PIP"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#TIP"/>
+        <hasSegments rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_1"/>
+        <hasSegments rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_2"/>
+        <hasSegments rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Sarpashirsha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Sarpashirsha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerParts"/>
+        <bottomJointPoint rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#DIP"/>
+        <topJointPoint rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#TIP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerParts"/>
+        <bottomJointPoint rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PIP"/>
+        <topJointPoint rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#DIP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerParts"/>
+        <bottomJointPoint rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#MCP"/>
+        <topJointPoint rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#PIP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerParts"/>
+        <bottomJointPoint rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#IP"/>
+        <topJointPoint rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#TIP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerParts"/>
+        <bottomJointPoint rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#MCP"/>
+        <topJointPoint rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#IP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerParts"/>
+        <bottomJointPoint rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#CMC"/>
+        <topJointPoint rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#CMC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Shikara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Shikara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Shukatunda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Shukatunda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Simhamukha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Simhamukha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Suchi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Suchi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#TIP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#TIP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#FingerJoints"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Tamrachuda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Tamrachuda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Thumb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Thumb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Finger"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#CMC"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#IP"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#MCP"/>
+        <hasJoints rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#TIP"/>
+        <hasSegments rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_4"/>
+        <hasSegments rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_5"/>
+        <hasSegments rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Seg_6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Tripataaka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Tripataaka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Trishula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Trishula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Vyagraha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Vyagraha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Mudra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#X -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#X">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Axis"/>
+        <NegativeDirName rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Left"/>
+        <PositiveDirName rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Right"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Y -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Y">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Axis"/>
+        <NegativeDirName rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Inward"/>
+        <PositiveDirName rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Outward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Z -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Z">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Axis"/>
+        <NegativeDirName rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Back"/>
+        <PositiveDirName rdf:resource="http://www.semanticweb.org/soumen/ontologies/2023/4/mudra-ontology#Front"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
